@@ -2,75 +2,63 @@
 
 * {
      box-sizing: initial;
-     padding: 0;
      margin: 0;
+     padding: 0;
     }
-    
-body {
-    font-family: 'Lato', sans-serif;
-    color: #333;
-    line-height: 1.6;
-}
 
-main {
-    font-family: 'Lato', sans-serif;
+body {
     color: #333;
     line-height: 1.6;
+    font-family: 'Lato', sans-serif;
 }
 
 h1 {
     color: #770707;
-    text-align: center;
     font-weight: bolder;
+    text-align: center;
 }
 
 p {
-    text-align: center;
-    font-size: 150%;
-    background-color: #ffffff;
     margin: 60px;
+    background-color: #ffffff;
+    font-size: 150%;
+    text-align: center;
 }
 
 footer p {
-    text-align: center;
-    font-size: 150%;
     margin: 0;
-    padding: 0;
     color: #424242;
+    font-size: 150%;
+    text-align: center;
 }
 
 img {
-    width: 50px;
-    height: auto;
     float: right;
     margin: 8px;
+    width: 50px;
+    height: auto;
 }
 
 .main_img img {
-    width: 100%;
-    height: auto;
     margin: auto;
     margin-bottom: 30px;
+    width: 100%;
+    height: auto;
 }
 
 .win_img img {
+    margin: auto;
     width: 100%;
     height: auto;
-    margin: auto;
 }
 
 .navbar {
-    background-color: rgba(51, 51, 51, 0.7);
     position: fixed;
     width: 100%;
-    z-index: 999;
 }
 
 .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: rgba(51, 51, 51, 0.7);
+    background-color: rgba(51, 51, 51, 0.8);
 }
 
 .navbar li {
@@ -78,13 +66,13 @@ img {
 }
 
 .navbar li a {
-    border: solid #858585 1px;
-    color: white;
-    font-weight: bold;
     display: block;
-    padding: 20px 30px;
-    text-decoration: solid;
     transition: background-color 0.9s;
+    border: solid #969696 2px;
+    padding: 20px 30px;
+    color: white;
+    font-weight: 900;
+    text-decoration: solid;
 }
 
 .navbar ul a.active-page {
@@ -92,9 +80,10 @@ img {
 }
 
 .navbar ul ul {
+    display: none;
     position: absolute;
     top: 100%;
-    display: none;
+
 }
 
 .navbar ul ul li {
@@ -103,16 +92,16 @@ img {
 
 .navbar li:hover ul {
     display: block;
+
 }
 
 .navbar a:hover {
     display: block;
-    border: 1px #fff solid;
-    transition: border 0.7s;
+    transition: border 0.9s;
     cursor: pointer;
+    border: 2px #fff solid;
 }
 
 .navbar ul ul li a:hover {
     background-color: #2e2e2e;
 }
-
