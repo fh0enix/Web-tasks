@@ -54,6 +54,7 @@ img {
 
 .navbar {
     position: fixed;
+    z-index: 2;
     width: 100%;
 }
 
@@ -83,7 +84,6 @@ img {
     display: none;
     position: absolute;
     top: 100%;
-
 }
 
 .navbar ul ul li {
@@ -92,7 +92,6 @@ img {
 
 .navbar li:hover ul {
     display: block;
-
 }
 
 .navbar a:hover {
@@ -104,4 +103,83 @@ img {
 
 .navbar ul ul li a:hover {
     background-color: #2e2e2e;
+}
+
+.flip-card {
+    perspective: 5000px;
+    z-index: 1;
+    margin-top: 70px;
+    margin-right: 50px;
+    margin-left: 50px;
+    background-color: transparent;
+    width: 500px;
+    height: 300px;
+  }
+
+  .flip-card-inner {
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .flip-card-front {
+    background-color: #8f8e8e;
+    color: rgb(131, 130, 130);
+  }
+
+  .flip-card-back {
+    transform: rotateY(180deg);
+    background-color: rgb(224, 224, 224);
+    color: rgb(113, 112, 112);
+  }
+
+.img-news img{
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.cloud {
+	position: relative;
+
+	width: 100px;
+	height: 100px;
+}
+
+.fcloud01 {
+	top: 100px;
+	z-index: 100;
+	animation: drift 5s linear infinite;
+	background-color: rgb(143, 143, 143);
+}
+
+.fcloud02 {
+	top: 180px;
+	z-index: 500;
+	animation: drift 6s 2s linear infinite both;
+	background-color: rgb(82, 82, 82);
+}
+
+@keyframes drift {
+	from {
+		transform: translateX(-110px);
+	}
+	to {
+		transform: translateX(1250px);
+	}
 }
