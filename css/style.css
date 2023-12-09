@@ -46,6 +46,7 @@ img {
 .main_img img {
     margin: auto;
     margin-bottom: 30px;
+    margin-top: 60px;
     width: 100%;
     height: auto;
 }
@@ -79,7 +80,8 @@ nav a {
     color: #fff;
     font-size: 20px;
     line-height: 60px;
-    text-decoration: none;
+    text-decoration: solid;
+    font-weight: 900;
 }
     nav .nav-list a:hover {
     transition-duration: 0.9s;
@@ -255,11 +257,98 @@ nav ul ul li {
 	background-color: rgb(82, 82, 82);
 }
 
-@keyframes drift {
-	from {
-		transform: translateX(-110px);
-	}
-	to {
-		transform: translateX(1250px);
-	}
+.adminimg{
+  max-width: 49%;
+  /* height: auto; */
+}
+.addImage{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-top: 50px;
+}
+.button {
+  transition-duration: 0.3s;
+  padding: 10px;
+  font-size: large;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+@keyframes example {
+  from {top: 100px;}
+  to {top: 0px;}
+}
+nav li a.active{
+  background:#000000;
+}
+.button:hover {
+  background-color: #070707;
+  color: white;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #727272;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+textarea, select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #6a6a6a;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none;
+  font-family: "Open Sans", sans-serif;
+}
+.add_news{
+  text-align: center;
+}
+
+.text-wave {
+  margin: auto;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* position: static; */
+}
+
+.text-wave span {
+  /* position: relative; */
+  color: #fff;
+  font-size: 40px;
+  font-family: monospace;
+  animation: wave 3s ease-in-out;
+  animation-delay: calc(.1s*var(--i));
+}
+@keyframes wave {
+  0% {
+    transform: translateY(0px);
+  }
+
+  20% {
+    transform: translateY(-24px);
+  }
+
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+}
+/* -------------fans------------ */
+.fan-appeal{
+  text-align: center;
+}
+
+.fan-text{
+  margin: 2% 5% ;
+}
+
+.redBorder{
+  border: 3px solid;
+  border-color: red;
 }
