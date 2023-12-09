@@ -272,20 +272,21 @@ nav ul ul li {
   font-size: large;
   border-radius: 5px;
   margin-bottom: 10px;
+  background-color: #383838;
+  color: white;
 }
 @keyframes example {
   from {top: 100px;}
   to {top: 0px;}
 }
 nav li a.active{
-  background:#000000;
+  background:#a5a5a5;
 }
 .button:hover {
   background-color: #070707;
   color: white;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
 }
-
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;
