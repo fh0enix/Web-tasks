@@ -259,7 +259,6 @@ nav ul ul li {
 
 .adminimg{
   max-width: 49%;
-  /* height: auto; */
 }
 .addImage{
   display: flex;
@@ -309,36 +308,6 @@ textarea, select {
   text-align: center;
 }
 
-.text-wave {
-  margin: auto;
-  display: flex;
-  /* align-items: center; */
-  justify-content: center;
-  /* position: static; */
-}
-
-.text-wave span {
-  /* position: relative; */
-  color: #fff;
-  font-size: 40px;
-  font-family: monospace;
-  animation: wave 3s ease-in-out;
-  animation-delay: calc(.1s*var(--i));
-}
-@keyframes wave {
-  0% {
-    transform: translateY(0px);
-  }
-
-  20% {
-    transform: translateY(-24px);
-  }
-
-  40%,
-  100% {
-    transform: translateY(0);
-  }
-}
 /* -------------fans------------ */
 .fan-appeal{
   text-align: center;

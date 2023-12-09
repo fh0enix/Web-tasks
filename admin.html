@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+      <title>New York Yankees</title>
+  </head>
+
+  <body>
+    <header>
+        <!-- Navigation Bar -->
+        <div id="container">
+            <input type="checkbox" id="toggle">
+            <nav>
+                <label class="navbar-toggler" for="toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                  </label>
+                <ul class="nav-list">
+                    <li><a href="index.html">Main</a></li>
+                    <li>
+                        <a href="#">Matches</a>
+                        <ul class="nav-sublist">
+                            <li><a href="calendar_of_matches.html">Calendar of matches</a></li>
+                            <li><a href="next_game.html">Next game</a></li>
+                            <li><a href="raiting.html">Raiting</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="fans.html">Fans</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin.html" class='active-page'>Admin</a></li>
+                </ul>
+                <img src="images/logo.png" alt="NY">
+            </nav>
+        </div>
+        </header>
+          <!-- Main Content -->
+        <main style="padding-top: 120px;">
+            <article id="article1" class="fan-text"></article>
+            <section class="addImage">
+              <div>
+                <input type="file" accept="image/jpeg, image/png, image/jpg" name="image" id="image-input" onchange="loadFile(event)" style="display: none;">
+                <p><img id="output" src="images/default_image.jpg" style="width:600px; height:400px;" /></p>
+              </div>
+              <div><label class="button" for="image-input" style="cursor: pointer;">Upload Image</label></div>
+            </section>
+            <section class="addImage">
+              <div style="max-width: 50%;">
+                  <input id="news_title" type="text" placeholder="News title" rows="15" cols="95"><br><br>
+                  <textarea id="news_text" rows="15" cols="95" placeholder="News text"></textarea>
+              </div>
+              <div><input id="btn" class="button" type="submit" value="Add news"></div>
+            </section>
+        </main>
+    <!-- Footer -->
+    <footer>
+        <p><a href="https://www.mlb.com/yankees">New York Yankees</a></p>
+        <p>Copyright &copy; 2023</a></p>
+    </footer>
+    <!-- JavaScript code -->
+    <script src="js/admin.js"></script>
+  </body>
+
+</html>
