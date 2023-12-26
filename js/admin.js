@@ -55,6 +55,13 @@ $(function(){
       // Якщо немає доступу до Інтернету, зберігаємо дані локально
       localStorage.setItem('title', news_title);
       localStorage.setItem('text', news_text);
+      localStorage.setItem('recent_image', imageInputValue);
+
+      $("#news_text").val('');
+      $("#news_title").val('');
+      image.src = defaultImagePath;
+
+      alert("Saved LOCALY successfully!");
     }
   });
 });

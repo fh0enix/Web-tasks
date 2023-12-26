@@ -5,111 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <title>New York Yankees</title>
 </head>
 
 <body>
-  <!-- Navigation Bar -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Main</a></li>
-            <li>
-                <a>Matches</a>
-                <ul>
-                    <li><a href="calendar_of_matches.html">Calendar of matches</a></li>
-                    <li><a href="next_game.html">Next game</a></li>
-                    <li><a href="raiting.html">Raiting</a></li>
-                </ul>
-            </li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="fans.html">Fans</a></li>
-            <li><a href="contact.html" class='active-page'>Contact</a></li>
-            <li><a href="admin.html">Admin</a></li>
+  <header>
+    <!-- Navigation Bar -->
+    <div id="container">
+        <input type="checkbox" id="toggle">
+        <nav>
+            <label class="navbar-toggler" for="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </label>
+            <ul class="nav-list">
+                <li><a href="index.html" class='active-page'>Main</a></li>
+                <li>
+                    <a href="#">Matches</a>
+                    <ul class="nav-sublist">
+                        <li><a href="calendar_of_matches.html">Calendar of matches</a></li>
+                        <li><a href="next_game.html">Next game</a></li>
+                        <li><a href="raiting.html">Raiting</a></li>
+                    </ul>
+                </li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="fans.html">Fans</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
             <img src="images/logo.png" alt="NY">
-            <span class="spinner rotate"></span>
-        </ul>
-    </nav>
+        </nav>
+    </div>
+    </header>
     <!-- Main Content -->
-    <main>
-      <table>
-        <tr>
-          <td>
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <div class="img-news">
-                    <img src="images/img_news.png" alt="news">
-                  </div>
-                </div>
-                <div class="flip-card-back">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td>
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <div class="img-news">
-                    <img src="images/img_news.png" alt="news">
-                  </div>
-                </div>
-                <div class="flip-card-back">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <div class="img-news">
-                    <img src="images/img_news.png" alt="news">
-                  </div>
-                </div>
-                <div class="flip-card-back">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td>
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <div class="img-news">
-                    <img src="images/img_news.png" alt="news">
-                  </div>
-                </div>
-                <div class="flip-card-back">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </td>
-        </tr>
-      </table>
+    <main style="padding-top: 80px;">
+      <section class="cards_with_news">
+        <div class="card">
+          <img src="https://source.unsplash.com/random/200x200/?0" alt="News" style="width:100%">
+          <div class="card-container">
+            <p>Lorem Ipsum</p>
+            <h4><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</b></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://source.unsplash.com/random/200x200/?1" alt="News" style="width:100%">
+          <div class="card-container">
+            <p>Lorem Ipsum</p>
+            <h4><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</b></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://source.unsplash.com/random/200x200/?2" alt="News" style="width:100%">
+          <div class="card-container">
+            <p>Lorem Ipsum</p>
+            <h4><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</b></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://source.unsplash.com/random/200x200/?3" alt="News" style="width:100%">
+          <div class="card-container">
+            <p>Lorem Ipsum</p>
+            <h4><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</b></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://source.unsplash.com/random/200x200/?4" alt="News" style="width:100%">
+          <div class="card-container">
+            <p>Lorem Ipsum</p>
+            <h4><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</b></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://source.unsplash.com/random/200x200/?5" alt="News" style="width:100%">
+          <div class="card-container">
+            <p>Lorem Ipsum</p>
+            <h4><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</b></h4>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Footer -->
     <footer>
-      <div class="cloud fcloud01"></div>
-      <div class="cloud fcloud02"></div>
-
       <p><a href="https://www.mlb.com/yankees">New York Yankees</a></p>
       <p>Copyright &copy; 2023</a></p>
     </footer>
+
+    <!-- JavaScript code -->
+    <script src="js/news.js"></script>
 </body>
 
 </html>
