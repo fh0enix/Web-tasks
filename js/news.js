@@ -10,8 +10,8 @@ $(function(){
     let new_card = `<div class="card">
       <img src=${image} style="width:100%">
       <div class="card-container">
-        <h4><b>${news_title}</b></h4>
-        <p>${news_text}</p>
+      <p>${news_title}</p>
+      <h4><b>${news_text}</b></h4>
       </div>
     </div>`
     $(".cards_with_news").prepend(new_card)
