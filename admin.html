@@ -40,21 +40,21 @@
         </div>
         </header>
           <!-- Main Content -->
-        <main style="padding-top: 120px;">
+        <main style="padding-top: 20px;">
             <article id="article1" class="fan-text"></article>
             <section class="addImage">
               <div>
                 <input type="file" accept="image/jpeg, image/png, image/jpg" name="image" id="image-input" onchange="loadFile(event)" style="display: none;">
-                <p><img id="output" style="width:600px; height:400px;"></p>
+                <p><img id="output" style="width:500px; height:500px;"></p>
+                <div class="center"><label class="button" for="image-input" style="cursor: pointer;">Upload Image</label></div>
               </div>
-              <div><label class="button" for="image-input" style="cursor: pointer;">Upload Image</label></div>
             </section>
             <section class="addImage">
               <div style="max-width: 50%;">
-                  <input id="news_title" type="text" placeholder="News title" rows="15" cols="95"><br><br>
-                  <textarea id="news_text" rows="15" cols="95" placeholder="News text"></textarea>
+                <input id="news_title" type="text" placeholder="News title" rows="15" cols="95"><br><br>
+                <textarea id="news_text" rows="15" cols="95" placeholder="News text"></textarea>
+                <div class="center"><input id="btn" class="button" type="submit" value="Add news"></div>
               </div>
-              <div><input id="btn" class="button" type="submit" value="Add news"></div>
             </section>
         </main>
     <!-- Footer -->

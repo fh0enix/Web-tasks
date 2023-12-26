@@ -1,7 +1,7 @@
 const image = document.getElementById('output');
 const image_input = document.querySelector("#image-input");
 
-const defaultImagePath = "images/default_image.jpg";
+const defaultImagePath = "images/default_image.png";
 
 image.src = defaultImagePath;
 

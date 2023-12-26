@@ -302,3 +302,9 @@ textarea, select {
   border: 3px solid;
   border-color: red;
 }
+
+.center {
+  margin: auto;
+  padding: 10px;
+  width: 20%;
+}
