@@ -3,9 +3,10 @@ function isOnline() {
 }
 
 $(function(){
-
   let currentTime = new Date($.now());
-  let formattedTime = currentTime.getHours() + ":" + currentTime.getMinutes() + ":" + currentTime.getSeconds();
+  let formattedTime = currentTime.getHours() + ":"
+                    + currentTime.getMinutes() + ":"
+                    + currentTime.getSeconds(2);
 
   if (isOnline() && 'appeal_text' in localStorage){
 
